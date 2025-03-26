@@ -3,19 +3,24 @@ import RevealOnScroll from "../RevealOnScroll";
 
 function About() {
     const frontendSkills = [
+        "html",
+        "css",
         "React",
-        "Vue",
+        "ES6",
+        "Express",
+        "Axios",
+        "Promise",
         "TypeScript",
         "TailwindCSS",
-        "Svelte",
+        "Material UI",
     ];
 
-    const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+    const backendSkills = ["Node.js", "Flask", "SQL", "MongoDB"];
 
     return (
         <section
             id="about"
-            className="min-h-screen flex items-center justify-center py-20"
+            className="min-h-screen flex items-center justify-center py-20 bg-blue-100"
         >
             <RevealOnScroll>
                 <div className="max-w-3xl mx-auto px-4">
@@ -24,15 +29,14 @@ function About() {
                         About Me
                     </h2>
 
-                    <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-                        <p className="text-gray-300 mb-6">
-                            Passionate developer with expertise in building scalable web
-                            applications and creating innovative solutions.
+                    <div className="rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                        <p className="text-black mb-6 text-center">
+                            Ich verfüge über grundlegende Programmiererfahrung in C, Python, Java, JavaScript usw. und beherrsche HTML5, React, REST-APIs und andere Technologien.
                         </p>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4"> Frontend</h3>
+                        <div className="flex flex-col gap-6">
+                            <div className="bg-white rounded-xl p-6 hover:-translate-y-1 transition-all shadow-lg">
+                                <h3 className="text-xl font-bold text-black mb-4"> Frontend</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {frontendSkills.map((tech, key) => (
                                         <span
@@ -47,8 +51,8 @@ function About() {
                                 </div>
                             </div>
 
-                            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                                <h3 className="text-xl font-bold mb-4"> Backend</h3>
+                            <div className="bg-white rounded-xl p-6 hover:-translate-y-1 transition-all shadow-lg">
+                                <h3 className="text-xl text-black font-bold mb-4"> Backend</h3>
                                 <div className="flex flex-wrap gap-2">
                                     {backendSkills.map((tech, key) => (
                                         <span
@@ -65,50 +69,68 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
-                            <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                <li>
-                                    <strong> B.S. in Computer Science </strong> - XYZ University
-                                    (2016-2020)
-                                </li>
-                                <li>
-                                    Relevant Coursework: Data Structures, Web Development, Cloud
-                                    Computing...
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                            <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-                            <div className="space-y-4 text-gray-300">
-                                <div>
-                                    <h4 className="font-semibold">
-                                        {" "}
-                                        Software Engineer at ABC Corp (2020 - Present){" "}
-                                    </h4>
-                                    <p>
-                                        Developed and maintained microservices for cloud-based
-                                        applications.
-                                    </p>
+
+
+                    <div>
+                        <div className="relative max-w-2xl mx-auto my-8">
+                            {/* 时间轴垂直线 */}
+                            <div className="absolute left-1/2 w-1 h-full bg-white -translate-x-1/2"></div>
+
+                            {/* 时间轴项容器 */}
+                            <div className="space-y-8">
+                                {/* 时间轴项 1 */}
+                                <div className="relative flex items-center gap-6">
+                                    {/* 时间节点圆点 */}
+                                    <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-blue-500 z-10 shadow-lg"></div>
+
+                                    {/* 左侧内容 */}
+                                    <div className="w-1/2 pr-12 text-right">
+                                        <time className="text-gray-500">2021</time>
+                                        <h3 className="text-xl font-semibold mt-2 text-blue-500">obtained bachelor's degree</h3>
+                                        <p className="text-gray-600 mt-1">in information system</p>
+                                        <p className="text-gray-600 mt-1">from University of International Business and Economics</p>
+                                    </div>
+
+                                    {/* 右侧占位 */}
+                                    <div className="w-1/2"></div>
                                 </div>
 
-                                <div>
-                                    <h4 className="font-semibold">
-                                        {" "}
-                                        Intern at DEF Startups (2019){" "}
-                                    </h4>
-                                    <p>
-                                        Assisted in building front-end components and integration
-                                        REST APIs
-                                    </p>
+                                {/* 时间轴项 2 */}
+                                <div className="relative flex items-center gap-6">
+                                    <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-blue-300 z-10 shadow-lg"></div>
+
+                                    {/* 右侧内容 */}
+                                    <div className="w-1/2 pl-12"></div>
+
+                                    {/* 左侧占位 */}
+                                    <div className="w-1/2"><time className="text-gray-500">2021-2024</time>
+                                        <h3 className="text-xl font-semibold mt-2 text-blue-500">worked as research assist</h3>
+                                        <p className="text-gray-600 mt-1">at National Engineering Research Center for Digital Life</p>
+                                        <p className="text-gray-600 mt-1">in Sun Yat-Sen University</p>
+                                    </div>
+
                                 </div>
+                            </div>
+
+                            {/* 时间轴项 3 */}
+                            <div className="relative flex items-center gap-6">
+                                <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-blue-500 z-10 shadow-lg"></div>
+
+                                <div className="w-1/2 pr-12 text-right">
+                                    <time className="text-gray-500">2024-now</time>
+                                    <h3 className="text-xl font-semibold mt-2 text-blue-500">studying for master's degree</h3>
+                                    <p className="text-gray-600 mt-1">in information system</p>
+                                    <p className="text-gray-600 mt-1">from FAU Erlangen-Nürnberg</p>
+                                </div>
+
+                                <div className="w-1/2"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </RevealOnScroll>
-        </section>
+        </section >
     );
 }
 

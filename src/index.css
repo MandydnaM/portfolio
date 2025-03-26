@@ -4,9 +4,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Space Grotesk", sans-serif;
-  background: #0a0a0a;
-  color: #f3f4f6;
+  font-family: Verdana, sans-serif;
+  background: #fff;
+  color: #0b0b0b;
 }
 
 @layer utilities {
@@ -23,7 +23,7 @@ body {
   }
 
   .animate-blink {
-    animation: blink 0.8s step-end infinite;
+    animation: blink 0.6s step-end infinite;
   }
 
   @keyframes loading {
@@ -37,7 +37,7 @@ body {
   }
 
   .animate-loading-bar {
-    animation: loading 0.8s ease infinite;
+    animation: loading 1.4s ease infinite;
   }
 }
 

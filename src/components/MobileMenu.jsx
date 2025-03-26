@@ -41,7 +41,7 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
                 }`} onClick={() => { setMenuOpen(false) }}>
                 Projects
             </a>
-            <a href="#contact" className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
+            <a href="mailto:mantingcaicontact@gmail.com?subject=Contact%20Request" className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
                     ${menuOpen
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-5"
