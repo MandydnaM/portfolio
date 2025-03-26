@@ -54,7 +54,7 @@ function Projects() {
                                 a responsive web application designed to showcase NutriCare’s nutrition consulting services.
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {["React", "JavaScript", "Webpack"].map((tech, key) => (
+                                {["React", "Google Maps API", "Webpack"].map((tech, key) => (
                                     <span
                                         key={key}
                                         className="
