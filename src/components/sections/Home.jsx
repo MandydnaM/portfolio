@@ -31,7 +31,7 @@ function Home() {
                         <div className="social-icon flex sm:flex-row gap-3 sm:gap-7 justify-center ">
 
 
-                            <a href="https://github.com/MandydnaM?tab=repositories" className='flex justify-center items-center gap-1 px-2 rounded-3xl w-10 h-10 sm:w-30 sm:h-12 bg-blue-300 hover:-translate-y-1 transition-all shadow-lg'>
+                            <a href="https://github.com/MandydnaM" className='flex justify-center items-center gap-1 px-2 rounded-3xl w-10 h-10 sm:w-30 sm:h-12 bg-blue-300 hover:-translate-y-1 transition-all shadow-lg'>
                                 <img src={navIcon1} className='w-8' />
                                 <p className='hidden sm:block text-1 font-black-500 text-center '>Github</p>
                             </a>
@@ -54,11 +54,11 @@ function Home() {
                     </div>
 
                     {/* 图片区块 */}
-                    <div className="md:basis-1/2 flex justify-center lg:block hidden">
+                    <div className="md:basis-1/2 lg:block hidden">
                         <img
                             src={headerImg}
                             alt="Header Img"
-                            className='rounded-full shadow-xl w-[90%] max-w-md'
+                            className='rounded-full object-cover shadow-xl w-[90%] max-w-md'
                         />
                     </div>
                 </div>
