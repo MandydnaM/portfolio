@@ -35,7 +35,7 @@ function Home() {
                                 <img src={navIcon1} className='w-8' />
                                 <p className='hidden sm:block text-1 font-black-500 text-center '>Github</p>
                             </a>
-                            <a href="www.linkedin.com/in/manting-cai-539946356" className='flex justify-center items-center gap-1 px-2 rounded-3xl w-10 h-10 sm:w-30 sm:h-12 bg-blue-400 hover:-translate-y-1 transition-all shadow-lg'>
+                            <a href="https://www.linkedin.com/in/manting-cai-539946356/" className='flex justify-center items-center gap-1 px-2 rounded-3xl w-10 h-10 sm:w-30 sm:h-12 bg-blue-400 hover:-translate-y-1 transition-all shadow-lg'>
                                 <img src={navIcon2} className='w-5' />
                                 <p className='hidden sm:block text-l font-black-500 text-center '>Linkedin</p>
                             </a>

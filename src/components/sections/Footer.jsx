@@ -9,7 +9,7 @@ function Footer() {
             <div className="flex justify-center items-center gap-10">
                 <a href="https://github.com/MandydnaM" className='w-8 h-8 bg-gray-400 rounded-full flex justify-center items-center'>
                     <img src={navIcon1} alt="Icon" className='w-5' /></a>
-                <a href="www.linkedin.com/in/manting-cai-539946356" className='w-8 h-8 bg-gray-400 rounded-full flex justify-center items-center'>
+                <a href="https://www.linkedin.com/in/manting-cai-539946356/" className='w-8 h-8 bg-gray-400 rounded-full flex justify-center items-center'>
                     <img src={navIcon2} alt="Icon" className='w-3' /></a>
                 <a href="mailto:mantingcaicontact@gmail.com?subject=Contact%20Request" className='w-8 h-8 bg-gray-400 rounded-full flex justify-center items-center'>
                     <img src={navIcon3} alt="Icon" className='w-5' /></a>
